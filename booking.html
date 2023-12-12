@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="booking.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="images/Gold Minimalist Interior Design Logo new.png"alt="logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="branches.html">OUR RESORTS</a></li>
+                <li><a href="experiences.html">EXPERIENCES</a></li>
+                <li><a href="resturants.html">RESTURANTS</a></li>
+                <li><a href="booking.html">HOTEL BOOKING</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<!-- background image--> 
+
+    <div class="booking-background">
+        <div class="main-text">
+        <h1>CONTACT&nbsp;US</h1>
+        <h2>We're delighted to make contact with you.</h2>
+        <a href=" #reservation ">
+        <button class="button">Book Now </button>
+        </a>
+        <a href=" #Adventurebooking ">
+        <button class="button">Book Adventures</button>
+        </a>
+
+    </div>
+
+    </div>
+<!--background image ended-->
+
+<!-- reservation -->
+<section class="reservation" id="reservation"> 
+    <h1 class="heading"> Guest Informations</h1>
+    <form action="">  
+
+      <div class="container"> 
+
+     <div calss="box">
+       <p>First name: <span></span></p>
+       <input type="text" id="First Name" class="input" placeholder="First Name:">
+     </div>
+
+     <div calss="box">
+       <p>Last Name: <span></span></p>
+       <input type="text" id="Last Name"class="input" placeholder="Last Name">
+     </div>
+     
+   <div calss="box">
+     <p> Address: <span></span></p>
+     <input type="text" id="Address"class="input" placeholder="Address:">
+   </div>
+
+   <div calss="box">
+       <p> Phone Number: <span></span></p>
+       <input type="tel" id="Phone Number"class="input" placeholder="Phone Number">
+   </div>
+
+     <div calss="box">
+       <p> Email: <span></span></p>
+       <input type="text" id="Email"class="input" placeholder="Email">
+     </div>
+
+     <div class="box">
+       <p>Special Requests:<span></span></p>
+       <!-- Replace the input with a textarea -->
+       <textarea class="input" id="Special Requests"placeholder="Special Requests" rows="4"></textarea>
+   </div>
+   
+     
+      </div>
+
+    </form>
+    
+</section>
+
+
+<!-- hotel booking -->
+<section class="reservation" id="reservation"> 
+   <h1 class="heading"> Booking Details</h1>
+   <form action="">  
+
+     <div class="container"> 
+
+   <label for="hotels">Hotel:</label>
+   <select id="hotels" name="hotels" required>
+       <option value="tamraparni kandy">TAMRAPARNI KANDY</option>
+       <option value="tamraparni galle">TAMRAPARNI GALLE</option>
+       <option value="tamraparni arugam bay">TAMRAPARNI ARUGAM BAY</option>
+   </select>
+
+    
+   <label for="checkInDate">Check-in Date:</label>
+   <input type="date" id="checkInDate" name="checkInDate" required>
+
+   <label for="checkOutDate">Check-Out Date:</label>
+   <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+       <label class="ChooseRoom">Room Types:</label><br>
+       <label for="singleRoom">
+           <input type="checkbox" id="singleRoom" name="roomType" value="single"> Single Room
+       </label>
+       <label for="numberOfSingleRooms">Number of Single Rooms</label>
+       <input type="number" id="numberOfSingleRooms" name="numberOfSingleRooms" min="0" value="0">
+
+       <label class="ChooseRoom">Room Types:</label><br>
+       <label for="doubleRoom">
+           <input type="checkbox" id="doubleRoom" name="roomType" value="double"> Double Room
+       </label>
+       <label for="numberOfDoubleRooms">Number of Double Rooms</label>
+       <input type="number" id="numberOfDoubleRooms" name="numberOfDoubleRooms" min="0" value="0">
+
+
+       <label class="ChooseRoom">Room Types:</label><br>
+       <label for="tripleRoom">
+           <input type="checkbox" id="tripleRoom" name="roomType" value="triple"> Triple Room
+       </label>
+       <label for="numberOfTripleRooms">Number of Triple Rooms</label>
+       <input type="number" id="numberOfTripleRooms" name="numberOfTripleRooms" min="0" value="0">
+
+       <label for="numberOfAdults" class="ChooseRoom">Number of Adults:</label>
+       <br>
+       <input type="number" id="numberOfAdults" name="numberOfAdults" min="1" value="1">
+
+       <label for="numberOfKids" class="ChooseRoom">Number of Kids:</label>
+       <br>
+       <input type="number" id="numberOfKids" name="numberOfKids" min="0" value="0">
+
+       <label class="ChooseRoom" id="ExtraAmenities">Extra Amenities:</label><br>
+       
+      
+       <label for="wifi">
+           <input type="checkbox" id="wifi" name="ExtraAmenities" value="wifi"> Wi-Fi
+       </label>
+       <label for="extraBed">
+           <input type="checkbox" id="extraBed" name="ExtraAmenities" value="extraBed"> Extra Bed
+       </label>
+       <label for="poolView">
+           <input type="radio" id="poolView" name="ExtraAmenities" value="poolView"> Pool View
+       </label>
+       <label for="gardenView">
+           <input type="radio" id="gardenView" name="ExtraAmenities" value="gardenView"> Garden View
+       </label><br>
+
+       <label for="promoCode" class="ChooseRoom">Enter Promo Code:</label>
+       <input type="text" id="promoCode" name="promoCode"><br><br>
+
+       <div class="button-container">
+           <button type="button" id="RoomBook">Confirm</button>
+           <button type="button" id="ClearButton">Clear</button>
+       </div>
+
+       <div id="DisplayBookNow"></div>
+       </div>   
+   
+     </div>
+
+   </form>
+   
+</section>
+
+<!-- adventure booking  -->
+
+<section class="Adventurebooking" id="Adventurebooking"> 
+   <h1 class="heading"> Adventure Booking Details</h1>
+   <form action="">  
+
+     <div class="container"> 
+
+   <label for="adventures">Adventures:</label>
+   <select id="adventures" name="adventures" required>
+       <option value="diving ">Diving</option>
+       <option value="surfing ">Surfing </option>
+       
+   </select>
+
+   
+   <label class="ChooseRoom">Select Your Category (Per 1 hour): </label><br>
+               <label for="localAdultDiving">
+               <input type="checkbox" id="localAdultDiving" name="adventure" value="localAdultDiving" required> Diving for local Adults
+               </label>
+               <input type="number" id="localAdultDivingParticipants" name="localAdultDivingParticipants" min="1" value="1" required>
+               <label for="localKidDiving">
+               <input type="checkbox" id="localKidDiving" name="adventure" value="localKidDiving" required> Diving for local kids (above 5 years)
+               </label>
+               <input type="number" id="localKidDivingParticipants" name="localKidDivingParticipants" min="1" value="1" required>
+               <label for="foreignAdultDiving">
+               <input type="checkbox" id="foreignAdultDiving" name="adventure" value="foreignAdultDiving" required> Diving for foreign adults
+               </label>
+               <input type="number" id="foreignAdultDivingParticipants" name="foreignAdultDivingParticipants" min="1" value="1" required>
+               <label for="foreignKidDiving">
+               <input type="checkbox" id="foreignKidDiving" name="adventure" value="foreignKidDiving" required> Diving for foreign kids (above 5 years)
+               </label>
+               <input type="number" id="foreignKidDivingParticipants" name="foreignKidDivingParticipants" min="1" value="1" required><br><br>
+               
+               <label class="ChooseRoom">Need a Guide: </label><br>
+               <label for="guideAdultCheckbox"> 
+               <input type="checkbox" id="guideAdultCheckbox">  for Adults</label>
+
+               <label for="guideKidsCheckbox"> 
+               <input type="checkbox" id="guideKidsCheckbox"> for Kids</label><br>
+       
+               <button type="button" id="AdventureBook">Confirm</button>
+
+               <div id="DisplayAdventureBookings"></div>
+
+     </div>
+   </form>
+</section>
+
+
+
+
+<footer>
+   <div class="container">
+       <div class="footer-content">
+           <div class="footer-logo">
+       
+               <img src="images/Gold Minimalist Interior Design Logo new.png" alt="hotel Logo">
+               <h1>Tamraparni Hotels & Resort</h1>
+           </div>
+           <div class="footer-menu">
+               <h2> Key Links</h2>
+               <ul>
+                   <li><a href="Index.html">Home</a></li>
+                   <li><a href="branches.html">Our Hotels</a></li>
+                   <li><a href="resturants.html">Resturats</a></li>
+                   <li><a href="booking.html">Contact us</a></li>
+               </ul>
+           </div>
+           <div class="footer-contact">
+               <h2>Contact Us</h2>
+               <p>Email: Tamraparnihotels&resortsSriLanka.com</p>
+               <p>Phone: +94 11 1234567</p>
+               <p>Phone: +94 11 7654321</p>
+               <p>Tamraparni hotels&resorts LTD 
+               <br>104/4 3rd lane,Lake road 
+               <br>Colombo,Sri Lanka.
+           </p>
+           <!-- <div class="socials">
+               <h2>Connect With Us</h2>
+               <a href="#"><img src="images/insta.png" alt="instagram logo"></a>
+               <a href="#"><img src="images/twitter.png" alt="twitter logo"></a>
+               <a href="#"><img src="images/youtube.png" alt="youtube logo"></a>
+               <a href="#"><img src="images/facebook.png" alt="facebook logo"></a>
+           </div> -->
+       
+
+
+           </div>
+       </div>
+   </div>
+</footer>
+
+</body>
+</html> 
+
+

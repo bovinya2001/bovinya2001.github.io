@@ -1,0 +1,603 @@
+:root{
+    --maincolor:#f5ec3c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.7%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.698);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+/*logo*/
+.header #logo img{
+    width: 50px;
+}
+/*nav-bar*/
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.nav ul li ul{
+    /* display: none; */
+    padding: 30px 10px 10px 10px;
+    position: absolute;
+    background: black;
+    display: none;
+}
+.nav ul li ul li{
+    color: rgb(19, 176, 30);
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
+}
+
+.nav ul li:hover > ul{
+    display: block;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.header img{     
+    width: 116px;
+}
+.main-background{
+    background-image: url(images/hotelsdotcom-541195-40576640_w-317495.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h1{
+    color:white;
+    font-size: 80px;
+
+}
+.main-text h2{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+/*HotelBranches*/
+
+.HotelBranches {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.HotelBranches h1 {
+   font-size: 35px;
+   color: black;
+   text-align: center;
+}
+.HotelBranches p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#flexing h2{
+    text-align: center;
+    font-size: clamp(25px,1.5vw,150px);
+  }
+#flexing img {
+    width: 100%;
+    height: 300px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    widows: 20%;
+    width: 30%;
+    margin: 1em;
+    list-style-type: circle;
+}
+.box p {
+    font-size: 20px;
+}
+  #maiin{
+    text-align: center;
+  }
+  #flexing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 2em;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+@media (max-width:800px){
+    #flexing{
+        flex-direction: column;
+    }
+    .box{
+        width: 80%;
+    }
+}
+  /*Resturants*/
+.Resturant {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.Resturant h1 {
+   font-size: 35px;
+   color: black;
+   text-align: center;
+}
+.Resturant p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+/* facilities styles*/
+section {
+    margin: 20px 0;
+}
+
+#flexbox-container-her2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-her-1 {
+    flex: 1;
+}
+
+.flex-her-1 h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.flex-her-1 ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.flex-her-1 li {
+    margin-bottom: 10px;
+}
+
+.flex-her-2 {
+    flex: 1;
+}
+
+#her-magpie {
+    display: block;
+    margin: 0 auto;
+}
+
+#her-magpie {
+    max-height: 100%;
+}
+.flex-her-2 + .flex-her-2 {
+    margin-top: 20px;
+}
+
+@media (max-width:800px){
+    #flexbox-container-her2{
+        flex-direction: column;
+    }
+    .flex-her-2 img{
+        width: 100%;
+    }
+}
+
+
+ 
+
+
+
+/*branches styles*/
+.branch-background{
+    background-image: url(images/wave1.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h1{
+    color: white;
+    font-size: 80px;
+}
+
+#flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.flexbox-branch-1 {
+    flex: 1;
+    padding: 20px;
+}
+
+#mainHeader {
+    text-align: center;
+}
+
+#mainHeader h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+
+#map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.flexbox-branch-img2 {
+    flex: 1;
+    padding: 20px;
+}
+
+#map {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+strong {
+    font-weight: bold;
+}
+
+
+
+/*experiences styles*/
+.adventure-background{
+    background-image: url(images/Kandy-City.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h1{
+    color: white;
+    font-size: 80px;
+}
+#flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.flexbox-experience-1 {
+    flex: 1;
+    padding: 20px;
+}
+#mainHeader {
+    text-align: center;
+}
+
+#mainHeader h1 {
+    font-size: 28px;
+    margin: 0;
+}
+#map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.flexbox-experience-img2 {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Style the image */
+#map {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+
+/*resturants styles*/
+.resturant-background{
+    background-image: url(images/main-restaurant-1920x656.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h1{
+    color: white;
+    font-size: 80px;
+}
+.events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.event h2 {
+    font-size: 20px;
+    margin: 0;
+}
+.event p {
+    font-size: 16px;
+    margin: 0;
+}
+.event-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.event-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-button:hover {
+    background-color: #0056b3;
+}
+
+.Even-sec{
+    text-align: center;
+}
+
+
+/*booking styles*/
+.booking-background{
+    background-image: url(images/Seaside_Dinner_at_Cayo_Espanto_Private_Island.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h1{
+    color: white;
+    font-size: 80px;
+}
+.button{
+    position: relative;
+    padding: 10px 22px;
+    background:#1eb0ff;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.button:active {
+     transform: scale(0.96);
+}
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #070606;
+    border-radius: 5px;
+}
+
+/* Style labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style form inputs and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #030303;
+    border-radius: 4px;
+}
+.reservation {
+    background-color: rgb(205, 190, 219);
+    border: 1px solid black;
+}
+.Adventurebooking {
+    background-color: rgb(205, 190, 219);
+    border: 1px solid black; 
+}
+
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Center the content in a container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.footer-menu {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-menu h2 {
+    font-size: 18px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 5px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-contact {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-contact h2 {
+    font-size: 18px;
+}
+
+/* Style for links in the footer */
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.socials{
+    display: flex;
+}
+
+.flex-her-2{
+    padding: 10px;
+}
+
+p{
+    padding: 40px;
+}
+
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+#mainHeader h1{
+    margin-bottom: 236px;
+}
+
